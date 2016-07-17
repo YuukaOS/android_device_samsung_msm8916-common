@@ -160,7 +160,8 @@ PRODUCT_PACKAGES += \
     com.android.location.provider \
     com.android.location.provider.xml \
     gps.msm8916 \
-    libshim_gps
+    libshim_gps \
+    liblocadapterbase_shim
 
 # Headers
 PRODUCT_VENDOR_KERNEL_HEADERS := \
