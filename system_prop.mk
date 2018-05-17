@@ -160,6 +160,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.config.spcm_preload_enable=true
 
 
+# SafetyNetM
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase.am=android-samsung \
+    ro.com.google.clientidbase.gmm=android-samsung \
+    ro.com.google.clientidbase.ms=android-samsung \
+    ro.com.google.clientidbase.yt=android-samsung
+
 # Time services
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
