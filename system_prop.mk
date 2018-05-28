@@ -79,7 +79,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.start_graphics_allocator_service=true \
     ro.surface_flinger.vsync_event_phase_offset_ns=4000000 \
-    ro.surface_flinger.vsync_sf_event_phase_offset_ns=8000000
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=8000000 \
+    sys.use_fifo_ui=1
 
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
