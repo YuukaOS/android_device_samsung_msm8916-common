@@ -419,6 +419,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
+# Camera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_long_ons_0="" \
