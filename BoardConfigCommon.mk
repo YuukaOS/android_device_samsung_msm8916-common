@@ -153,6 +153,7 @@ endif
 
 # Malloc implementation
 MALLOC_SVELTE := true
+TARGET_USES_OLD_MNC_FORMAT := true
 
 # Media
 TARGET_QCOM_MEDIA_VARIANT := caf
