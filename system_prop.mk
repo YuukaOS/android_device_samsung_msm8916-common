@@ -108,7 +108,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.smoothstreaming=true \
     mmp.enable.3g2=true \
     debug.stagefright.omx_default_rank.sw-audio=1 \
-    debug.stagefright.omx_default_rank=0
+    debug.stagefright.omx_default_rank=0 \
+    debug.stagefright.ccodec=0
 
 # Misc.
 PRODUCT_PROPERTY_OVERRIDES += \
