@@ -123,6 +123,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank=0 \
     debug.stagefright.ccodec=0
 
+# Memory optimization
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.am.reschedule_service=true \
+    ro.vendor.qti.sys.fw.bservice_enable=true
+
 # Misc.
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
