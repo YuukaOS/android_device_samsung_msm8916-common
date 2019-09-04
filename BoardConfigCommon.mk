@@ -37,6 +37,7 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 # Allow overriding commands during build
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PHONY_TARGETS := true
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
