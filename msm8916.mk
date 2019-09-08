@@ -184,7 +184,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # FS
 PRODUCT_PACKAGES += \
     fsck.f2fs \
-    mkfs.f2fs
+    mkfs.f2fs \
+    fs_config_files
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
