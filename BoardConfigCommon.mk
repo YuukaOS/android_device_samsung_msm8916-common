@@ -199,6 +199,14 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE  := 15728640
 BOARD_CACHEIMAGE_PARTITION_SIZE     := 314572800
 BOARD_FLASH_BLOCK_SIZE              := 131072
 
+# Root folders
+BOARD_ROOT_EXTRA_FOLDERS := \
+    firmware \
+    firmware-modem \
+    efs \
+    misc \
+    persist
+
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
