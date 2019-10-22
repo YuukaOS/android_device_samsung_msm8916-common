@@ -39,6 +39,7 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Audio
+AUDIO_FEATURE_ENABLED_SND_MONITOR := true
 AUDIO_CONFIG_PATH := hardware/qcom/audio-caf/msm8916/configs
 BOARD_USES_ALSA_AUDIO := true
 BOARD_USES_GENERIC_AUDIO := true
