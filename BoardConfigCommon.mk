@@ -239,9 +239,6 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libizat_core.so|libshim_gps.so \
     /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so
 
-# Snapdragon LLVM
-TARGET_USE_SDCLANG := true
-
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
