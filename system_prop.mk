@@ -126,7 +126,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Memory optimization
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.am.reschedule_service=true \
-    ro.vendor.qti.sys.fw.bservice_enable=true
+    ro.vendor.qti.sys.fw.bservice_enable=true \
+    ro.lmk.medium=700 \
+    dalvik.vm.madvise-random=true
 
 # Misc.
 PRODUCT_PROPERTY_OVERRIDES += \

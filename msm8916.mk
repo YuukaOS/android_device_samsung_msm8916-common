@@ -369,6 +369,9 @@ PRODUCT_PACKAGES += \
     wificond \
     wpa_supplicant
 
+# Disable Scudo to save RAM.
+PRODUCT_DISABLE_SCUDO := true
+
 # Common Android Go configurations
 $(call inherit-product, build/target/product/go_defaults.mk)
 
