@@ -278,8 +278,8 @@ endif
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
 
-#BOARD_SEPOLICY_DIRS += \
-#    $(LOCAL_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += \
+    $(LOCAL_PATH)/sepolicy
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
