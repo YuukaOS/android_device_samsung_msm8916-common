@@ -720,7 +720,7 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     disabled
     oneshot
 
-service link_ril_db /system/bin/sh /init.link_ril_db.sh
+service link_ril_db /system/bin/sh /vendor/etc/init/hw/init.link_ril_db.sh
     class main
     user root
     oneshot
