@@ -1,22 +1,39 @@
 [
   {
-    "repository": "android_hardware_samsung",
-    "target_path": "hardware/samsung"
+    "remote": "github",
+    "repository": "LineageOS/android_hardware_samsung",
+    "target_path": "hardware/samsung",
+    "revision": "lineage-17.0"
   },
   {
-    "repository": "android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings"
+    "remote": "github",
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "revision": "lineage-17.0"
   },
   {
-    "repository": "android_device_samsung_qcom-common",
-    "target_path": "device/samsung/qcom-common"
+    "remote": "github",
+    "repository": "LineageOS/android_device_samsung_qcom-common",
+    "target_path": "device/samsung/qcom-common",
+    "revision": "lineage-17.0"
   },
   {
-    "repository": "android_external_sony_boringssl-compat",
-    "target_path": "external/sony/boringssl-compat"
+    "remote": "github",
+    "repository": "LineageOS/android_external_sony_boringssl-compat",
+    "target_path": "external/sony/boringssl-compat",
+    "revision": "lineage-17.0"
   },
   {
-    "repository": "android_kernel_samsung_msm8916",
-    "target_path": "kernel/samsung/msm8916"
-  }
+    "remote": "github",
+    "repository": "DarkDroidDev/android_kernel_samsung_msm8916",
+    "target_path": "kernel/samsung/msm8916",
+    "revision": "ten"
+  },
+  {
+    "remote": "github",
+    "repository": "DarkDroidDev/proprietary_vendor_samsung",
+    "target_path": "vendor/samsung",
+    "revision": "ten"
+  },
+
 ]
