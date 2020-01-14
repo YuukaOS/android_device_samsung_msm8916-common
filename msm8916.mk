@@ -102,13 +102,24 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    bluetooth.hfp.client=1 \
+    ro.qualcomm.bt.hci_transport=smd \
+    qcom.bluetooth.soc=smd \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
+    vendor.qcom.bluetooth.soc=pronto \
     ro.bluetooth.dun=true \
     ro.bluetooth.hfp.ver=1.7 \
     ro.bluetooth.sap=true \
-    ro.qualcomm.bt.hci_transport=smd \
-    vendor.qcom.bluetooth.soc=pronto \
-    persist.bluetooth.bluetooth_audio_hal.disabled=true
+    ro.qualcomm.bluetooth.ftp=true \
+    ro.qualcomm.bluetooth.hfp=true \
+    ro.qualcomm.bluetooth.hsp=true \
+    ro.qualcomm.bluetooth.map=true \
+    ro.qualcomm.bluetooth.nap=true \
+    ro.qualcomm.bluetooth.opp=true \
+    ro.qualcomm.bluetooth.pbap=true
+
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service
 
 # BoringSSL Hacks
 PRODUCT_PACKAGES += \
