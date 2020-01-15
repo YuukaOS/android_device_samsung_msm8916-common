@@ -112,6 +112,10 @@ PRODUCT_PACKAGES += \
     memtrack.msm8916 \
     vendor.lineage.livedisplay@1.0-service-legacymm
 
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
