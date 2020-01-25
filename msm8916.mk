@@ -350,3 +350,6 @@ PRODUCT_PACKAGES += \
     wcnss_service \
     wificond \
     wpa_supplicant
+
+# Common Android Go configurations
+$(call inherit-product, build/target/product/go_defaults.mk)
