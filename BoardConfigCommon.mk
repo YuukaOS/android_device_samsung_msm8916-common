@@ -40,7 +40,7 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PHONY_TARGETS := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gprimelte,gprimeltespr,gprimeltefnvzw,gprimeltezt,gprimeltexx,fortunalteub,fortuna3g,fortunave3g,SM-G530FZ,SM-G530H,SM-G530M,SM-G530MU,SM-S920L,SM-G530P,SM-G530T,SM-G530T1,SM-G530W,SM-G530,G530
+TARGET_OTA_ASSERT_DEVICE := gprimelte,gprimeltespr,gprimeltefnvzw,gprimeltezt,gprimeltexx,fortunalteub,fortuna3g,fortuna3gdtv,fortunave3g,SM-G530FZ,SM-G530H,SM-G530M,SM-G530MU,SM-S920L,SM-G530P,SM-G530T,SM-G530T1,SM-G530W,SM-G530,G530
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
