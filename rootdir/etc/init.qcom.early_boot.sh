@@ -193,27 +193,6 @@ case "$platform" in
             fi
         fi
 
-        # Set ro.opengles.version based on chip id.
-        # MSM8939 variants supports OpenGLES 3.1
-        # 196608 is decimal for 0x30000 to report version 3.0
-        # 196609 is decimal for 0x30001 to report version 3.1
-        case "$soc_hwid" in
-            233|239|240|241|242|243|263|268|269|270|271)
-                setprop ro.opengles.version 196610
-                if [ $soc_hwid -ge "239" ] && [ $soc_hwid -le "243" ]
-                then
-                    setprop media.msm8939hw 1
-                fi
-                if [ $soc_hwid -ge "268" ] && [ $soc_hwid -le "271" ]
-                then
-                    setprop media.msm8929hw 1
-                fi
-                ;;
-            *)
-                setprop ro.opengles.version 196608
-                ;;
-        esac
-
 	# auto firmware upgrade for ITE tecg touch screen
         case $platform in
             "msm8909" | "msm8909w")

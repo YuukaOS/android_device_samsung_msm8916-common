@@ -80,6 +80,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fm.transmitter=false
 
+# Google Play Store
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version=196608
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=c2d \
