@@ -25,6 +25,9 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+# fix alarm permissions
+/dev/alarm                0664   system     radio
+
 # the DIAG device node is not world writable/readable.
 /dev/diag                 0660   system     diag
 
