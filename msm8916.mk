@@ -147,6 +147,10 @@ PRODUCT_PACKAGES += \
     mkfs.f2fs \
     fs_config_files
 
+# FSverity
+PRODUCT_PACKAGES += \
+    fsverity
+
 # GPS Configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/flp.conf \
