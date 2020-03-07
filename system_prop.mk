@@ -190,11 +190,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
 
-
-# ZRAM - Size in MB
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.zram.size=128
-
 # Debugging
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
