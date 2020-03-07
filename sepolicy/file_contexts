@@ -61,3 +61,10 @@ sys/bus/platform/drivers/sec-battery/battery.85/power_supply/battery(/.*)?			u:o
 
 # qmuxd
 /system/bin/qmuxd										u:object_r:qmuxd_exec:s0
+
+# DRM
+/vendor/bin/hw/android\.hardware\.drm@1\.1-service\.clearkey u:object_r:hal_drm_clearkey_exec:s0
+/vendor/bin/hw/android\.hardware\.drm@1\.1-service\.widevine u:object_r:hal_drm_widevine_exec:s0
+
+# Service HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.authsecret@1\.0-service u:object_r:hal_authsecret_default_exec:s
