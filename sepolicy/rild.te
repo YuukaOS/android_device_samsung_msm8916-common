@@ -1,14 +1,13 @@
-binder_use(rild)
-
-allow rild proc_net:file w_file_perms;
-
-allow rild radio_data_file:dir rw_dir_perms;
-allow rild radio_data_file:file create_file_perms;
-allow rild system_data_file:lnk_file { getattr read };
-allow rild unlabeled:lnk_file { read getattr };
-allow rild net_radio_prop:property_service set;
-allow rild unlabeled:dir search;
-allow rild unlabeled:file { getattr open read };
-
-
-set_prop(rild, system_radio_prop)
+#============= qti_init_shell ==============
+allow qti_init_shell bluetooth_efs_file:dir search;
+allow qti_init_shell bluetooth_efs_file:file { open read };
+allow qti_init_shell efs_file:dir search;
+allow qti_init_shell file_contexts_file:file { getattr open read };
+allow qti_init_shell persist_data_file:dir search;
+allow qti_init_shell persist_data_file:file { open read };
+allow qti_init_shell radio_data_file:lnk_file { create getattr read setattr };
+allow qti_init_shell sysfs:file write;
+allow qti_init_shell toolbox_exec:file { execute execute_no_trans getattr open read };
+allow qti_init_shell vfat:dir search;
+allow rild device:chr_file { read write open ioctl };
+allow rild storage_file:dir { search read write open };

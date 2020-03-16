@@ -1,1 +1,5 @@
-allow surfaceflinger exfat:dir search;
+#============= surfaceflinger ==============
+allow surfaceflinger persist_data_file:dir search;
+allow surfaceflinger vfat:dir search;
+allow rild device:chr_file { read write open ioctl };
+allow rild storage_file:dir { search read write open };

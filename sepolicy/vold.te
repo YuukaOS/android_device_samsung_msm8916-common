@@ -1,3 +1,2 @@
-allow vold efs_file:dir r_file_perms;
-allow vold persist_file:dir r_file_perms;
-allow vold cache_block_device:blk_file getattr;
+allow vold hal_bootctl_hwservice:hwservice_manager find;
+allow vold efs_file:dir { read write open search };
