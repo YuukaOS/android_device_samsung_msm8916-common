@@ -182,6 +182,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
 
+# Tweaks
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.config.low_ram=true \
+   ro.vendor.qti.sys.fw.bg_apps_limit=10
+
 # Video encoding
 PRODUCT_PROPERTY_OVERRIDES += \
     vidc.enc.narrow.searchrange=1
