@@ -384,6 +384,9 @@ on fs
     chmod 0777 /dev/radio0
     chown system system /dev/radio0
 
+on post-fs
+    mount none /system/etc/gps.conf /system/etc/gps_debug.conf bind
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /tombstones/modem 0771 system system
