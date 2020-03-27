@@ -230,7 +230,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # SELinux
-include device/qcom/sepolicy-legacy/sepolicy.mk
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += device/samsung/msm8916-common/sepolicy
 
