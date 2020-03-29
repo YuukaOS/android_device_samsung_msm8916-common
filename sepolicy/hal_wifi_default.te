@@ -1,0 +1,3 @@
+#============= hal_wifi_default ==============
+allow hal_wifi_default proc_net:file write;
+

@@ -1,4 +1,0 @@
-#============= netd ==============
-allow netd sysfs:file { open write };
-allow netd device:file { read write open };
-

@@ -1,2 +1,0 @@
-allow installd device:file { read open write };
-
