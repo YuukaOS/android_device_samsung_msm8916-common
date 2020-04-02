@@ -179,9 +179,6 @@ void set_target_properties(const char *device, const char *model)
 
 void vendor_load_properties(void)
 {
-    // Init a dummy BT MAC address, will be overwritten later
-    android::init::property_set("ro.boot.btmacaddr", "00:00:00:00:00:00");
-
     /* set the device properties */
     init_target_properties();
 
