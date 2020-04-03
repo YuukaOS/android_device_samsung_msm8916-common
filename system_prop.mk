@@ -194,7 +194,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.config.low_ram=true \
-   ro.vendor.qti.sys.fw.bg_apps_limit=10
+   ro.vendor.qti.sys.fw.bg_apps_limit=24
 
 # Video encoding
 PRODUCT_PROPERTY_OVERRIDES += \
