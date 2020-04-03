@@ -30,6 +30,15 @@ import /vendor/etc/init/hw/init.qcom.usb.rc
 #import init.carrier.rc	#import /vendor/etc/init/hw/init.carrier.rc
 
 on init
+    # configure zram and zswap
+    write /proc/sys/vm/page-cluster 0
+    write /proc/sys/vm/swappiness 35
+    write /proc/sys/vm/vfs_cache_pressure 65
+    write /sys/block/zram0/comp_algorithm lz4
+    write /sys/module/zswap/parameters/compressor lz4
+    write /sys/module/zswap/parameters/zpool zsmalloc
+    write /sys/module/zswap/parameters/max_pool_percent 35
+    write /sys/module/zswap/parameters/enabled 1
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -775,6 +784,9 @@ service qcom-post-boot /system/vendor/bin/init.qcom.post_boot.sh
 on property:sys.boot_completed=1
     start qcom-post-boot
     setprop sys.io.scheduler "bfq"
+
+    # Enable zram
+    swapon_all /vendor/etc/fstab.qcom
 
 # Enable Touch Devices
     write /sys/class/touch_key/control manual
