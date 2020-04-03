@@ -34,7 +34,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bt.hci_transport=smd \
-    qcom.bluetooth.soc=smd \
+    qcom.bluetooth.soc=pronto \
     persist.bluetooth.bluetooth_audio_hal.disabled=true \
     vendor.bluetooth.soc=pronto \
     vendor.qcom.bluetooth.soc=pronto \
