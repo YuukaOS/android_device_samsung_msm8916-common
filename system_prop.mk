@@ -144,7 +144,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.kill_timeout_ms=15 \
     ro.lmk.use_minfree_levels=true \
     ro.lmk.enhance_batch_kill=true \
-    ro.lmk.vmpressure_file_min=80640
+    ro.lmk.vmpressure_file_min=80640 \
+    ro.config.zram.size=256 \
+    ro.config.zram.enabled=true
 
 # Misc.
 PRODUCT_PROPERTY_OVERRIDES += \
