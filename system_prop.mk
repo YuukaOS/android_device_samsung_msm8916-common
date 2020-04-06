@@ -47,7 +47,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bluetooth.map=true \
     ro.qualcomm.bluetooth.nap=true \
     ro.qualcomm.bluetooth.opp=true \
-    ro.qualcomm.bluetooth.pbap=true
+    ro.qualcomm.bluetooth.pbap=true \
+    ro.bt.bdaddr_path=/efs/bluetooth/bt_addr
 
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
