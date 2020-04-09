@@ -685,21 +685,6 @@ service start_hci_filter /system/bin/wcnss_filter
     group bluetooth diag
     disabled
 
-service hciattach /system/bin/hci_qcomm_init -e
-    class late_start
-    user bluetooth
-    group bluetooth net_bt_admin diag radio
-    disabled
-    seclabel u:r:bluetooth_loader:s0
-    oneshot
-
-on property:vendor.bluetooth.hciattach=true
-    start hciattach
-    setprop vendor.bluetooth.status on
-
-on property:vendor.bluetooth.hciattach=false
-    setprop vendor.bluetooth.status off
-
 # QMUX must be in multiple groups to support external process connections
 service qmuxd /system/vendor/bin/qmuxd
     class main
