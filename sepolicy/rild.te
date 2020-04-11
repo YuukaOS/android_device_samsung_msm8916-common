@@ -9,5 +9,5 @@ allow rild system_data_file:dir { add_name remove_name write };
 allow rild system_data_file:file { create open read setattr unlink write };
 allow rild unlabeled:dir search;
 allow rild unlabeled:file { getattr open read };
-
-
+allow rild device:chr_file { read write open ioctl };
+allow rild storage_file:dir { search read write open };
