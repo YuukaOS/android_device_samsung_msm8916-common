@@ -3,6 +3,9 @@
 #
 /(vendor|system/vendor)/bin/init\.link_ril_db\.sh                              u:object_r:qti_init_shell_exec:s0
 
+# Battery
+/sys/devices/battery.83/power_supply/battery/present                          u:object_r:sysfs_batteryinfo:s0
+
 ##################################
 # Crypto
 #
