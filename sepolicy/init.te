@@ -14,4 +14,4 @@ allow init vfat:dir search;
 allow init vfat:file { getattr open read };
 allow init vndbinder_device:chr_file { ioctl open read write };
 allow init wcnss_device:chr_file { open read write };
-
+allow init sysfs_livedisplay_tuneable:file { read };
