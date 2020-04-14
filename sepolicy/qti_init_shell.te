@@ -17,4 +17,10 @@ allow qti_init_shell system_data_file:file { create open write };
 allow qti_init_shell toolbox_exec:file { execute execute_no_trans getattr open read };
 allow qti_init_shell vfat:dir search;
 allow qti_init_shell sysfs_android_usb:file { read write };
+allow qti_init_shell qti_init_shell:capability { sys_resource };
+allow qti_init_shell shell_exec:file { getattr };
+allow qti_init_shell rootfs:file { open read entrypoint };
+allow qti_init_shell device:dir { write add_name create open };
+allow qti_init_shell unlabeled:dir { search };
+allow qti_init_shell device:file { create write open };
 

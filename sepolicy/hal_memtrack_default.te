@@ -16,6 +16,7 @@ allow hal_memtrack_default {
 }:dir search;
 
 allow hal_memtrack_default {
+    hal_authsecret_default
     hal_configstore_default
     hal_keymaster_default
     hal_keymaster_qti
@@ -26,6 +27,7 @@ allow hal_memtrack_default {
     hal_vibrator_default
     hwservicemanager
     init
+    idmap
     system_app
     servicemanager
     vndservicemanager

@@ -1,0 +1,2 @@
+allow fsck_untrusted vold_device:blk_file { ioctl };
+

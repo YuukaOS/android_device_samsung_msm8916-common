@@ -15,3 +15,5 @@ allow priv_app system_app_data_file:dir r_dir_perms;
 allow priv_app radio_data_file:dir r_dir_perms;
 allow priv_app nfc_data_file:dir r_dir_perms;
 allow priv_app bluetooth_data_file:dir r_dir_perms;
+allow priv_app proc_version:file { getattr open };
+allow priv_app wifi_prop:file { getattr open };

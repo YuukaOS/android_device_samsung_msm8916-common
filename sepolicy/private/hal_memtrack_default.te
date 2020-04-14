@@ -1,0 +1,2 @@
+allow hal_memtrack_default hal_allocator_default:file { getattr open read };
+allow hal_memtrack_default hal_allocator_default:dir search;

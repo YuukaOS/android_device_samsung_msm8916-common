@@ -6,6 +6,27 @@
 # Battery
 /sys/devices/battery.83/power_supply/battery/present                          u:object_r:sysfs_batteryinfo:s0
 
+# Block devices
+/dev/block/platform/soc\.0/7824900\.sdhci/by-name/efs						u:object_r:modem_efs_partition_device:s0
+/dev/block/platform/soc\.0/7824900\.sdhci/by-name/fota						u:object_r:misc_block_device:s0
+
+# Camera
+/sys/devices/virtual/camera(/.*)?								u:object_r:sysfs_camera:s0
+/data/cam_socket.*		
+
+# Device nodes
+/dev/sec-nfc											u:object_r:nfc_device:s0
+/dev/i2c-1		
+
+# Graphics
+/sys/devices/virtual/lcd/panel(/.*)?								u:object_r:sysfs_graphics:s0
+
+# LiveDisplay
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.samsung-qcom		u:object_r:hal_lineage_livedisplay_default_exec:s0
+
+# mDNIe
+/sys/devices/virtual/mdnie/mdnie(/.*)?								u:object_r:sysfs_mdnie:s0
+
 ##################################
 # Crypto
 #
@@ -35,3 +56,15 @@
 # Service HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.authsecret@1\.0-service u:object_r:hal_authsecret_default_exec:s0
 
+# sysfs
+/sys/devices/virtual/sensors(/.*)?                      u:object_r:sysfs_sensors:s0
+/sys/devices/virtual/input(/.*)?                        u:object_r:sysfs_input:s0
+/sys/devices/platform/sec-thermistor(/.*)?              u:object_r:sysfs_sec_thermistor:s0
+/sys/devices/virtual/sec/bamdmux(/.*)?                  u:object_r:sysfs_sec_bamdmux:s0
+/sys/devices/virtual/sec/sec_key(/.*)?                  u:object_r:sysfs_sec_key:s0
+/sys/devices/virtual/sec/sec_touchkey(/.*)?             u:object_r:sysfs_sec_touchkey:s0
+/sys/devices/virtual/sec/switch(/.*)?                   u:object_r:sysfs_sec_switch:s0
+/sys/devices/virtual/host_notify/usb_otg(/.*)?               u:object_r:sysfs_usb_otg:s0
+
+# Vibrator
+/sys/devices/virtual/timed_output/vibrator(/.*)?						u:object_r:sysfs_vibeamp:s0

@@ -1,4 +1,18 @@
 # kgsl file type for sysfs access
 type sysfs_kgsl_gpuclk, sysfs_type, fs_type;
 type misc_file, file_type;
-
+type sysfs_mdnie, fs_type, sysfs_type;
+type wifi_efs_file, file_type;
+type sysfs_vibeamp, fs_type, sysfs_type;
+type sysfs_input, fs_type, sysfs_type;
+type sysfs_sec_bamdmux, fs_type, sysfs_type;
+type sysfs_sec_touchkey, fs_type, sysfs_type;
+type sysfs_sec_key, fs_type, sysfs_type;
+type sysfs_sec_switch, fs_type, sysfs_type;
+type sysfs_usb_otg, fs_type, sysfs_type;
+type camera_socket, file_type, data_file_type;
+type perfd, domain;
+type sysfs_devices_sensors, file_type, sysfs_type;
+type firmware-modem_file, file_type;
+type sysfs_camera, fs_type, sysfs_type;
+type sysfs_sec_thermistor, fs_type, sysfs_type;

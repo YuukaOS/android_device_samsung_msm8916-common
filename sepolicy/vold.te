@@ -1,4 +1,5 @@
 #============= vold ==============
+allow vold cache_block_device:blk_file getattr;
 allow vold block_device:blk_file { getattr ioctl open read write }; 
 allow vold efs_file:dir { ioctl open read };
 allow vold hal_bootctl_hwservice:hwservice_manager find;

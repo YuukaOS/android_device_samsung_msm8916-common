@@ -1,6 +1,12 @@
+allow untrusted_app_27 sysfs:file { open read getattr };
 allow untrusted_app_27 proc_qtaguid_stat:file { getattr open read };
 allow untrusted_app_27 proc_qtaguid_stat:dir { search read };
 allow untrusted_app_27 rootfs:dir r_dir_perms;
 allow untrusted_app_27 proc:file { getattr open read };
 allow untrusted_app_27 proc:dir { search read };
 allow untrusted_app_27 sysfs_net:dir r_dir_perms;
+allow untrusted_app_27 proc_vmstat:file { open getattr };
+allow untrusted_app_27 proc_uptime:file { open getattr };
+allow untrusted_app_27 sysfs_batteryinfo:dir { search };
+allow untrusted_app_27 sysfs_batteryinfo:file { read open getattr };
+
